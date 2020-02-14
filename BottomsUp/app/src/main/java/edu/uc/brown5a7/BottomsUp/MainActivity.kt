@@ -18,4 +18,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun FBTest() {
+        //function to return firebase object
+    }
+
 }
