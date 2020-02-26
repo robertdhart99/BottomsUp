@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: jars-{{ checksum "build.gradle" }}-{{ checksum "BottomsUp/build.gradle" }}
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum "BottomsUp/BottomsUp/build.gradle" }}
       - run:
           name: chmod permissions
           command: chmod +x ./gradlew
