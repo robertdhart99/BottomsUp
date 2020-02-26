@@ -12,5 +12,11 @@ class MainViewModel : ViewModel() {
     fun fetchDrinks(name: String) {
         drinks = drinkService.fetchDrinks(name)
     }
+
+
+    fun comment()
+    {
+        //this is a test comment to check for circle ci integration
+    }
     // TODO: Implement the ViewModel
 }
