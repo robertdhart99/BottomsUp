@@ -5,16 +5,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
     tools:context=".ui.main.MainFragment">
 
     <TextView
-        android:id="@+id/message"
+        android:id="@+id/lblPopular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MainFragment"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/popularProducts"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actSearch" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actSearch"
+        android:layout_width="349dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/background_light"
+        android:elevation="6.5dpdp"
+        android:hint="@string/searchDrink"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

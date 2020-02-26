@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BottomsUp</string>
+    <string name="popularProducts">Popular Products</string>
+    <string name="searchDrink">Search...</string>
 </resources>
