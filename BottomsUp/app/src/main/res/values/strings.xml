@@ -2,4 +2,6 @@
     <string name="app_name">BottomsUp</string>
     <string name="popularProducts">Popular Products</string>
     <string name="searchDrink">Search...</string>
+    <string name="drinkName">Drink Name</string>
+    <string name="juiceTag">Juice</string>
 </resources>
