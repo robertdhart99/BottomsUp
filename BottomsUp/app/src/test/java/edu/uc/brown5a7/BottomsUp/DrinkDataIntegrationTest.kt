@@ -92,4 +92,31 @@ class DrinkDataIntegrationTest {
         }
     }
 
+    @Test
+    fun searchForCategory_ReturnAppropriateDrinks(){
+        givenAFeedOfDrinkDataAreAvailable()
+        whenSearchForSoda()
+        theResultContainsCokeAndPepsi()
+    }
+
+    private fun whenSearchForSoda() {
+        mvm.fetchCategory("soda")
+    }
+
+    private fun theResultContainsCokeAndPepsi() {
+        var sodaFound = false
+
+        mvm.drinks.observeForever {
+            //observe the drink data
+            Assert.assertNotNull(it)
+            Assert.assertTrue(it.size > 0)
+            it.forEach {
+                if ((it.name == "coke" && it.brand == "coca-cola" && it.category == "soda" && it.drinkId == "26" && it.comment.contains("Really good on a warm day!") && it.rating == "4") && (it.name == "Pepsi" && it.brand == "Pepsi Co" && it.category == "soda" && it.drinkId == "27" && it.comment.contains("An american classic drink. the perfect cola for anything") && it.rating == "5")) {
+                    sodaFound = true
+                }
+            }
+            Assert.assertTrue(sodaFound)
+        }
+    }
+
 }
