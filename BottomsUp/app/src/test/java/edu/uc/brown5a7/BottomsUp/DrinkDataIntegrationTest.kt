@@ -26,12 +26,18 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForCoke_returnsCoke(){
-        whenSearchForCoke()
+        whenSearchingFor("Coke")
         thenResultContainsCoke()
     }
 
-    private fun whenSearchForCoke() {
-        mvm.fetchDrinks("coke")
+    private fun whenSearchingFor(searchTerm: String)
+    {
+        mvm.fetchDrinks(searchTerm)
+    }
+
+    private fun whenSearchingForCatagory(searchCatagory: String)
+    {
+        mvm.fetchCategory(searchCatagory)
     }
 
     private fun thenResultContainsCoke() {
@@ -52,12 +58,8 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForMariageFreres_returnsMariageFreres(){
-        whenSearchForMariageFreres()
+        whenSearchingFor("Mariage Freres")
         thenResultContainsMariageFreres()
-    }
-
-    private fun whenSearchForMariageFreres() {
-        mvm.fetchDrinks("Mariage Freres")
     }
 
     private fun thenResultContainsMariageFreres() {
@@ -78,12 +80,8 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForGarbage_ReturnsNothing(){
-        whenISearchForGarbage()
+        whenSearchingFor("asdflkj")
         thenIGetZeroResults()
-    }
-
-    private fun whenISearchForGarbage() {
-        mvm.fetchDrinks("asdflkj")
     }
 
     private fun thenIGetZeroResults() {
@@ -94,12 +92,8 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForCategory_ReturnAppropriateDrinks(){
-        whenSearchForSoda()
+        whenSearchingForCatagory("soda")
         theResultContainsCokeAndPepsi()
-    }
-
-    private fun whenSearchForSoda() {
-        mvm.fetchCategory("soda")
     }
 
     private fun theResultContainsCokeAndPepsi() {
