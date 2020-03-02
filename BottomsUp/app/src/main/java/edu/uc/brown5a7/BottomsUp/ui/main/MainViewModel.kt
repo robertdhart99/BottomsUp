@@ -13,6 +13,10 @@ class MainViewModel : ViewModel() {
         drinks = drinkService.fetchDrinks(name)
     }
 
+    fun fetchCategory(category: String) {
+        drinks = drinkService.fetchCategory(category)
+    }
+
 
     fun comment()
     {
