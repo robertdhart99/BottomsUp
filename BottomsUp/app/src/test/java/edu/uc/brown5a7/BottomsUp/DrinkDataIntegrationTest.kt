@@ -10,6 +10,10 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
 
+/*
+ * Integration test for Drinkservice.kt. Tests fetching of drinks based on search terms and search categories.
+ */
+
 class DrinkDataIntegrationTest {
 
     @get:Rule
