@@ -5,6 +5,7 @@ import edu.uc.brown5a7.BottomsUp.service.DrinkService
 import edu.uc.brown5a7.BottomsUp.ui.main.MainViewModel
 import io.mockk.mockk
 import org.junit.Assert
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
@@ -17,15 +18,16 @@ class DrinkDataIntegrationTest {
 
     var drinkService = mockk<DrinkService>()
 
-    @Test
-    fun searchForCoke_returnsCoke(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForCoke()
-        thenResultContainsCoke()
+    @Before
+    fun setUp()
+    {
+        mvm = MainViewModel()
     }
 
-    private fun givenAFeedOfDrinkDataAreAvailable() {
-        mvm = MainViewModel()
+    @Test
+    fun searchForCoke_returnsCoke(){
+        whenSearchForCoke()
+        thenResultContainsCoke()
     }
 
     private fun whenSearchForCoke() {
@@ -50,7 +52,6 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForMariageFreres_returnsMariageFreres(){
-        givenAFeedOfDrinkDataAreAvailable()
         whenSearchForMariageFreres()
         thenResultContainsMariageFreres()
     }
@@ -77,7 +78,6 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForGarbage_ReturnsNothing(){
-        givenAFeedOfDrinkDataAreAvailable()
         whenISearchForGarbage()
         thenIGetZeroResults()
     }
@@ -94,7 +94,6 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForCategory_ReturnAppropriateDrinks(){
-        givenAFeedOfDrinkDataAreAvailable()
         whenSearchForSoda()
         theResultContainsCokeAndPepsi()
     }
