@@ -6,57 +6,57 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="28"
-8-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml
+8-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml
+9-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:5:5-66
-11-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:7:5-21:19
+13-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:7:5-21:19
 14        android:allowBackup="true"
-14-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:8:9-35
+14-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.0.2] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\ba212ec26a7deeab49b3b5abe4363928\core-1.0.2\AndroidManifest.xml:22:18-86
+15-->[androidx.core:core:1.0.2] C:\Users\Bhart\.gradle\caches\transforms-2\files-2.1\d0faa7e87181cec61df420f7c6fa99d1\core-1.0.2\AndroidManifest.xml:22:18-86
 16        android:debuggable="true"
 17        android:extractNativeLibs="false"
 18        android:icon="@mipmap/ic_launcher"
-18-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:9:9-43
+18-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:9:9-43
 19        android:label="@string/app_name"
-19-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:10:9-41
+19-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:10:9-41
 20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:11:9-54
+20-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:11:9-54
 21        android:supportsRtl="true"
-21-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:12:9-35
+21-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:12:9-35
 22        android:theme="@style/AppTheme" >
-22-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:13:9-40
+22-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:13:9-40
 23        <activity android:name="edu.uc.brown5a7.BottomsUp.MainActivity" >
-23-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:14:9-20:20
-23-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:14:19-47
+23-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:14:9-20:20
+23-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:14:19-47
 24            <intent-filter>
-24-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:15:13-19:29
+24-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:15:13-19:29
 25                <action android:name="android.intent.action.MAIN" />
-25-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:16:17-69
-25-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:16:25-66
+25-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:16:17-69
+25-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:16:25-66
 26
 27                <category android:name="android.intent.category.LAUNCHER" />
-27-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:18:17-77
-27-->D:\Documents\Dev\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:18:27-74
+27-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:18:17-77
+27-->C:\Users\Bhart\OneDrive\Desktop\GitHub stuff\BottomsUp\BottomsUp\app\src\main\AndroidManifest.xml:18:27-74
 28            </intent-filter>
 29        </activity>
 30
 31        <provider
-31-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\aedfc73349c70fb6184440547482f8a3\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+31-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Bhart\.gradle\caches\transforms-2\files-2.1\614a4bee522a68609569339724250955\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 32            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-32-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\aedfc73349c70fb6184440547482f8a3\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+32-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Bhart\.gradle\caches\transforms-2\files-2.1\614a4bee522a68609569339724250955\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
 33            android:authorities="edu.uc.brown5a7.BottomsUp.lifecycle-process"
-33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\aedfc73349c70fb6184440547482f8a3\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Bhart\.gradle\caches\transforms-2\files-2.1\614a4bee522a68609569339724250955\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 34            android:exported="false"
-34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\aedfc73349c70fb6184440547482f8a3\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Bhart\.gradle\caches\transforms-2\files-2.1\614a4bee522a68609569339724250955\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
 35            android:multiprocess="true" />
-35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\aedfc73349c70fb6184440547482f8a3\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Bhart\.gradle\caches\transforms-2\files-2.1\614a4bee522a68609569339724250955\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
 36    </application>
 37
 38</manifest>

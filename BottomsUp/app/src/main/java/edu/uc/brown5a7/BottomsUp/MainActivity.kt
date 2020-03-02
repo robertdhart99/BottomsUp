@@ -2,8 +2,13 @@ package edu.uc.brown5a7.BottomsUp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuInflater
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import edu.uc.brown5a7.BottomsUp.dto.Drink
+import edu.uc.brown5a7.BottomsUp.searchAdaptor.drinkAdapter
+import edu.uc.brown5a7.BottomsUp.service.DrinkService
 //import edu.uc.brown5a7.BottomsUp.searchAdapter.DrinkAdapter
 import edu.uc.brown5a7.BottomsUp.ui.main.MainFragment
 
@@ -13,26 +18,21 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
 
-/*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
         setContentView(R.layout.main_fragment)
 
-        viewManager = LinearLayoutManager(this)
-        viewAdapter = DrinkAdapter(drinkList)
+        val layoutManager = LinearLayoutManager(this)
+        layoutManager.orientation = LinearLayoutManager.VERTICAL
+        recyclerView.layoutManager = layoutManager
 
-        recyclerView = findViewById<RecyclerView>(R.id.recyclerView).apply {
-            // use this setting to improve performance if you know that changes
-            // in content do not change the layout size of the RecyclerView
-            setHasFixedSize(true)
+        var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
+        var drinkService: DrinkService = DrinkService()
+        drinks = drinkService.fetchDrinks("blank")
+        val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink>
+        val adapter = drinkAdapter(this, drinksFullList)
+        recyclerView.adapter = adapter
 
-            // use a linear layout manager
-            layoutManager = viewManager
 
-            // specify an viewAdapter (see also next example)
-            adapter = viewAdapter
-        }
     }
- */
 }
