@@ -5,9 +5,14 @@ import edu.uc.brown5a7.BottomsUp.service.DrinkService
 import edu.uc.brown5a7.BottomsUp.ui.main.MainViewModel
 import io.mockk.mockk
 import org.junit.Assert
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
+
+/*
+ * Integration test for Drinkservice.kt. Tests fetching of drinks based on search terms and search categories.
+ */
 
 class DrinkDataIntegrationTest {
 
@@ -17,19 +22,26 @@ class DrinkDataIntegrationTest {
 
     var drinkService = mockk<DrinkService>()
 
-    @Test
-    fun searchForCoke_returnsCoke(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForCoke()
-        thenResultContainsCoke()
-    }
-
-    private fun givenAFeedOfDrinkDataAreAvailable() {
+    @Before
+    fun setUp()
+    {
         mvm = MainViewModel()
     }
 
-    private fun whenSearchForCoke() {
-        mvm.fetchDrinks("coke")
+    @Test
+    fun searchForCoke_returnsCoke(){
+        whenSearchingFor("Coke")
+        thenResultContainsCoke()
+    }
+
+    private fun whenSearchingFor(searchTerm: String)
+    {
+        mvm.fetchDrinks(searchTerm)
+    }
+
+    private fun whenSearchingForCatagory(searchCatagory: String)
+    {
+        mvm.fetchCategory(searchCatagory)
     }
 
     private fun thenResultContainsCoke() {
@@ -50,13 +62,8 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForMariageFreres_returnsMariageFreres(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForMariageFreres()
+        whenSearchingFor("Mariage Freres")
         thenResultContainsMariageFreres()
-    }
-
-    private fun whenSearchForMariageFreres() {
-        mvm.fetchDrinks("Mariage Freres")
     }
 
     private fun thenResultContainsMariageFreres() {
@@ -77,13 +84,8 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForGarbage_ReturnsNothing(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenISearchForGarbage()
+        whenSearchingFor("asdflkj")
         thenIGetZeroResults()
-    }
-
-    private fun whenISearchForGarbage() {
-        mvm.fetchDrinks("asdflkj")
     }
 
     private fun thenIGetZeroResults() {
@@ -94,13 +96,8 @@ class DrinkDataIntegrationTest {
 
     @Test
     fun searchForCategory_ReturnAppropriateDrinks(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForSoda()
+        whenSearchingForCatagory("soda")
         theResultContainsCokeAndPepsi()
-    }
-
-    private fun whenSearchForSoda() {
-        mvm.fetchCategory("soda")
     }
 
     private fun theResultContainsCokeAndPepsi() {
