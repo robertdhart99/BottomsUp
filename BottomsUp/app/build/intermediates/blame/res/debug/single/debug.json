@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Bhart\\OneDrive\\Desktop\\GitHub stuff\\BottomsUp\\BottomsUp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
