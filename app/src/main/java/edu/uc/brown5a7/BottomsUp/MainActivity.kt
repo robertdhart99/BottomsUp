@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         initRecyclerView()
         //UNCOMMENT THESE LINES WHEN CASTING HAS BEEN WORKED OUT FOR drinksFullList:
-        val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink> //ClassCastException: androidx.lifecycle.MutableLiveData cannot be cast to java.util.ArrayList
+        /*val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink> //ClassCastException: androidx.lifecycle.MutableLiveData cannot be cast to java.util.ArrayList
         drinkAdapter = DrinkAdapter(this, drinksFullList)
-        recycler_view.adapter = drinkAdapter
+        recycler_view.adapter = drinkAdapter*/
     }
 
     private fun initRecyclerView() {
