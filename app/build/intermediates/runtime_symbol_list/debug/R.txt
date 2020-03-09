@@ -1153,7 +1153,7 @@ int id pin 0x7f080079
 int id progress_circular 0x7f08007a
 int id progress_horizontal 0x7f08007b
 int id radio 0x7f08007c
-int id recyclerView 0x7f08007d
+int id recycler_view 0x7f08007d
 int id right 0x7f08007e
 int id right_icon 0x7f08007f
 int id right_side 0x7f080080
