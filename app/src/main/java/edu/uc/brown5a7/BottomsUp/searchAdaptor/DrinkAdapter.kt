@@ -1,29 +1,29 @@
 package edu.uc.brown5a7.BottomsUp.searchAdaptor
 
 import android.content.Context
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Toast
-import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import edu.uc.brown5a7.BottomsUp.R
 import edu.uc.brown5a7.BottomsUp.dto.Drink
 import kotlinx.android.synthetic.main.row.view.*
+import java.util.*
+import kotlin.collections.ArrayList
 
-class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : RecyclerView.Adapter<drinkAdapter.MyViewHolder>(){
-    private val drinkListFull: ArrayList<Drink> = TODO()
+class DrinkAdapter(val context: Context, var drinks: ArrayList<Drink>) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>(){
+    private var drinkListFull: ArrayList<Drink> = ArrayList(drinks)
 
-    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class MyViewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentdrink: Drink? = null;
-        var currentPosition: Int = 0
+        private lateinit var currentDrink: Drink
+        private var currentPosition: Int = 0
 
         init{
             itemView.setOnClickListener {
-                Toast.makeText(context, currentdrink!!.name + " Clicked !", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, currentDrink!!.name + " Clicked !", Toast.LENGTH_SHORT).show()
                 // this is just a place holder. in future it will open the full details page for the clicked drink
             }
         }
@@ -31,7 +31,7 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         fun setData(drink: Drink?, pos: Int) {
         itemView.drinkName.text = drink!!.name
 
-            this.currentdrink = drink
+            this.currentDrink = drink
             this.currentPosition = pos
         }
     }
@@ -42,11 +42,11 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
     }
 
     override fun getItemCount(): Int {
-        return drinks.size
+        return drinkListFull.size
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val drink = drinks[position]
+        val drink = drinkListFull[position]
         holder.setData(drink, position)
     }
 
@@ -63,9 +63,9 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
                 // might need to change isBlank back to .length === 0
                 filteredList.addAll(drinkListFull)
             } else {
-                val filterPattern: String = constraint.toString().toLowerCase().trim()
+                val filterPattern: String = constraint.toString().toLowerCase(Locale.ROOT).trim()
                 for (item in drinkListFull) {
-                    if (item!!.name.toLowerCase().contains(filterPattern)) {
+                    if (item!!.name.toLowerCase(Locale.ROOT).contains(filterPattern)) {
                         filteredList.add(item)
                     }
                 }
@@ -83,9 +83,5 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         }
     }
 
-    init {
-        this.drinks = drinks
-        drinkListFull = ArrayList(drinks)
-    }
     //
 }

@@ -11,7 +11,7 @@ import retrofit2.Response
 class DrinkService {
 
     fun fetchDrinks(name: String) : MutableLiveData<ArrayList<Drink>> {
-        var _drinks = MutableLiveData<ArrayList<Drink>>()
+        val _drinks = MutableLiveData<ArrayList<Drink>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(IDrinkDAO::class.java)
         val call = service?.getAllDrinks()
         call?.enqueue(object: Callback<ArrayList<Drink>> {
@@ -33,7 +33,7 @@ class DrinkService {
     }
 
     fun fetchCategory(category: String) : MutableLiveData<ArrayList<Drink>> {
-        var _category = MutableLiveData<ArrayList<Drink>>()
+        val _category = MutableLiveData<ArrayList<Drink>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(IDrinkDAO::class.java)
         val call = service?.getAllDrinks()
         call?.enqueue(object: Callback<ArrayList<Drink>> {
