@@ -5,9 +5,14 @@ import edu.uc.brown5a7.BottomsUp.service.DrinkService
 import edu.uc.brown5a7.BottomsUp.ui.main.MainViewModel
 import io.mockk.mockk
 import org.junit.Assert
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
+
+/*
+ * Integration test for Drinkservice.kt. Tests fetching of drinks based on search terms and search categories.
+ */
 
 class DrinkDataIntegrationTest {
 
@@ -17,26 +22,50 @@ class DrinkDataIntegrationTest {
 
     var drinkService = mockk<DrinkService>()
 
-    @Test
-    fun searchForCoke_returnsCoke(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForCoke()
-        thenResultContainsCoke()
-    }
-
-    private fun givenAFeedOfDrinkDataAreAvailable() {
+    @Before
+    fun setUp()
+    {
         mvm = MainViewModel()
     }
 
-    private fun whenSearchForCoke() {
-        mvm.fetchDrinks("coke")
+    @Test
+    fun searchForCoke_returnsCoke(){
+        whenSearchingFor("Coke")
+        thenResultContainsCoke()
+    }
+
+    @Test
+    fun searchForMariageFreres_returnsMariageFreres(){
+        whenSearchingFor("Mariage Freres")
+        thenResultContainsMariageFreres()
+    }
+
+    @Test
+    fun searchForGarbage_ReturnsNothing(){
+        whenSearchingFor("asdflkj")
+        thenIGetZeroResults()
+    }
+
+    @Test
+    fun searchForCategory_ReturnAppropriateDrinks(){
+        whenSearchingForCategory("soda")
+        thenResultContainsCokeAndPepsi()
+    }
+
+    private fun whenSearchingFor(searchTerm: String)
+    {
+        mvm.fetchDrinks(searchTerm)
+    }
+
+    private fun whenSearchingForCategory(searchCategory: String)
+    {
+        mvm.fetchCategory(searchCategory)
     }
 
     private fun thenResultContainsCoke() {
         var cokeFound = false
 
         mvm.drinks.observeForever {
-            //observe the drink data
             Assert.assertNotNull(it)
             Assert.assertTrue(it.size > 0)
             it.forEach {
@@ -48,22 +77,10 @@ class DrinkDataIntegrationTest {
         }
     }
 
-    @Test
-    fun searchForMariageFreres_returnsMariageFreres(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForMariageFreres()
-        thenResultContainsMariageFreres()
-    }
-
-    private fun whenSearchForMariageFreres() {
-        mvm.fetchDrinks("Mariage Freres")
-    }
-
     private fun thenResultContainsMariageFreres() {
         var MariageFreresFound = false
 
         mvm.drinks.observeForever {
-            //observe the drink data
             Assert.assertNotNull(it)
             Assert.assertTrue(it.size > 0)
             it.forEach {
@@ -75,35 +92,13 @@ class DrinkDataIntegrationTest {
         }
     }
 
-    @Test
-    fun searchForGarbage_ReturnsNothing(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenISearchForGarbage()
-        thenIGetZeroResults()
-    }
-
-    private fun whenISearchForGarbage() {
-        mvm.fetchDrinks("asdflkj")
-    }
-
     private fun thenIGetZeroResults() {
         mvm.drinks.observeForever{
             Assert.assertEquals(0, it.size)
         }
     }
 
-    @Test
-    fun searchForCategory_ReturnAppropriateDrinks(){
-        givenAFeedOfDrinkDataAreAvailable()
-        whenSearchForSoda()
-        theResultContainsCokeAndPepsi()
-    }
-
-    private fun whenSearchForSoda() {
-        mvm.fetchCategory("soda")
-    }
-
-    private fun theResultContainsCokeAndPepsi() {
+    private fun thenResultContainsCokeAndPepsi() {
         var sodaFound = false
 
         mvm.drinks.observeForever {
