@@ -13,7 +13,7 @@ import edu.uc.brown5a7.BottomsUp.R
 import edu.uc.brown5a7.BottomsUp.dto.Drink
 import kotlinx.android.synthetic.main.row.view.*
 
-class drinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : RecyclerView.Adapter<drinkAdapter.MyViewHolder>(){
+class DrinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>(){
     private val drinkListFull : ArrayList<Drink> = TODO()
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -29,7 +29,7 @@ class drinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : Recyc
         }
 
         fun setData(drink: Drink?, pos: Int) {
-        itemView.drinkName.text = drink!!.name
+            itemView.drinkName.text = drink!!.name
 
             this.currentdrink = drink
             this.currentPosition = pos

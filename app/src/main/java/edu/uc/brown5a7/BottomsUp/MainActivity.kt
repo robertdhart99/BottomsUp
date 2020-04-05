@@ -2,15 +2,12 @@ package edu.uc.brown5a7.BottomsUp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuInflater
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import edu.uc.brown5a7.BottomsUp.dto.Drink
-import edu.uc.brown5a7.BottomsUp.searchAdaptor.drinkAdapter
 import edu.uc.brown5a7.BottomsUp.service.DrinkService
 //import edu.uc.brown5a7.BottomsUp.searchAdapter.DrinkAdapter
-import edu.uc.brown5a7.BottomsUp.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
