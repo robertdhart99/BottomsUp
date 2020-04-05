@@ -6,8 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import edu.uc.brown5a7.BottomsUp.dto.Drink
+import edu.uc.brown5a7.BottomsUp.searchAdaptor.DrinkAdapter
 import edu.uc.brown5a7.BottomsUp.service.DrinkService
-//import edu.uc.brown5a7.BottomsUp.searchAdapter.DrinkAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         var drinkService : DrinkService = DrinkService()
         drinks = drinkService.fetchDrinks("blank")
         val drinksFullList : ArrayList<Drink> = drinks as ArrayList<Drink>
-        val adapter = drinkAdapter(this, drinksFullList)
+        val adapter = DrinkAdapter(this, drinksFullList)
         recyclerView.adapter = adapter
 
 
