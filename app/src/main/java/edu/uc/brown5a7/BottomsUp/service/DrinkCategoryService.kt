@@ -14,14 +14,14 @@ class DrinkCategoryService {
         val service = RetrofitClientInstance.retrofitInstance?.create(IDrinkDAO::class.java)
         val call = service?.getAllDrinks()
         call?.enqueue(object: Callback<ArrayList<Drink>> {
-            override fun onFailure(call: Call<ArrayList<Drink>>, t: Throwable) {
+            override fun onFailure(call: Call<ArrayList<Drink>>, t : Throwable) {
                 val i = 1 + 1
                 val j = 1 + 1
             }
 
             override fun onResponse(
-                call: Call<ArrayList<Drink>>,
-                response: Response<ArrayList<Drink>>
+                call : Call<ArrayList<Drink>>,
+                response : Response<ArrayList<Drink>>
             ) {
                 _category.value = response.body()
             }

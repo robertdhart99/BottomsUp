@@ -13,13 +13,13 @@ import edu.uc.brown5a7.BottomsUp.R
 import edu.uc.brown5a7.BottomsUp.dto.Drink
 import kotlinx.android.synthetic.main.row.view.*
 
-class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : RecyclerView.Adapter<drinkAdapter.MyViewHolder>(){
-    private val drinkListFull: ArrayList<Drink> = TODO()
+class drinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : RecyclerView.Adapter<drinkAdapter.MyViewHolder>(){
+    private val drinkListFull : ArrayList<Drink> = TODO()
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentdrink: Drink? = null;
-        var currentPosition: Int = 0
+        var currentdrink : Drink? = null;
+        var currentPosition : Int = 0
 
         init{
             itemView.setOnClickListener {
@@ -41,24 +41,24 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         return MyViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount() : Int {
         return drinks.size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder : MyViewHolder, position : Int) {
         val drink = drinks[position]
         holder.setData(drink, position)
     }
 
     //
     @get:Override
-    val filter: Filter
+    val filter : Filter
         get() = drinkFilter
 
-    private val drinkFilter: Filter = object : Filter() {
+    private val drinkFilter : Filter = object : Filter() {
         @Override
-        protected override fun performFiltering(constraint: CharSequence?): FilterResults {
-            val filteredList: ArrayList<Drink> = ArrayList()
+        protected override fun performFiltering(constraint : CharSequence?) : FilterResults {
+            val filteredList : ArrayList<Drink> = ArrayList()
             if (constraint == null || constraint.isBlank()) {
                 // might need to change isBlank back to .length === 0
                 filteredList.addAll(drinkListFull)
@@ -76,7 +76,7 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         }
 
         @Override
-        protected override fun publishResults(constraint: CharSequence?, results: FilterResults) {
+        protected override fun publishResults(constraint : CharSequence?, results : FilterResults) {
             drinks.clear()
             drinks.addAll(results.values as ArrayList<Drink>)
             notifyDataSetChanged()

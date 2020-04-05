@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
 
-        var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
-        var drinkService: DrinkService = DrinkService()
+        var drinks : MutableLiveData<ArrayList<Drink>> = MutableLiveData()
+        var drinkService : DrinkService = DrinkService()
         drinks = drinkService.fetchDrinks("blank")
-        val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink>
+        val drinksFullList : ArrayList<Drink> = drinks as ArrayList<Drink>
         val adapter = drinkAdapter(this, drinksFullList)
         recyclerView.adapter = adapter
 
