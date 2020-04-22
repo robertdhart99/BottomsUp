@@ -10,8 +10,6 @@ import edu.uc.brown5a7.BottomsUp.dto.Drink
 import edu.uc.brown5a7.BottomsUp.searchAdaptor.drinkAdapter
 import edu.uc.brown5a7.BottomsUp.service.DrinkService
 //import edu.uc.brown5a7.BottomsUp.searchAdapter.DrinkAdapter
-import edu.uc.brown5a7.BottomsUp.ui.main.MainFragment
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
@@ -22,9 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_fragment)
 
-        val layoutManager = LinearLayoutManager(this)
-        layoutManager.orientation = LinearLayoutManager.VERTICAL
-        recyclerView.layoutManager = layoutManager
 
         var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
         var drinkService: DrinkService = DrinkService()

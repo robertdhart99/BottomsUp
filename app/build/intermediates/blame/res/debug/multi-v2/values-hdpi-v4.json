@@ -4,7 +4,7 @@
             "outputFile": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/mashaneshenko/.gradle/caches/transforms-2/files-2.1/67a46ba5d6deb9f9b6753e82b9183905/appcompat-1.0.2/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/mashaneshenko/.gradle/caches/transforms-2/files-2.1/ce4cf89a33ded15216b272ad8910c428/appcompat-1.0.2/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

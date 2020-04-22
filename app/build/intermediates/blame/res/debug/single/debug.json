@@ -8,12 +8,12 @@
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/layout_row.xml.flat",
@@ -24,6 +24,14 @@
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/rounded_corners.xml"
     },
     {
+        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable_username_field.png.flat",
+        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/username_field.png"
+    },
+    {
+        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/layout_sign_up_activity.xml.flat",
+        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/layout/sign_up_activity.xml"
+    },
+    {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -32,12 +40,16 @@
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/layout_sign_up_activity.xml.flat",
-        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/layout/sign_up_activity.xml"
+        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable_password_field.png.flat",
+        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/password_field.png"
     },
     {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/layout_main_fragment.xml.flat",
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable_sign_up_btn.png.flat",
+        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/sign_up_btn.png"
     },
     {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
