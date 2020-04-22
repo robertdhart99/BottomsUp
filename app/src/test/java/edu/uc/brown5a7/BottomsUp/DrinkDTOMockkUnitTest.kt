@@ -12,13 +12,12 @@ import io.mockk.verify
 import org.junit.Test
 
 import org.junit.Assert.*
+import org.junit.Before
 import org.junit.Rule
 import org.junit.rules.TestRule
 
 /**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
+ * Test for DrinkDTO
  */
 class DrinkDTOMockkUnitTest {
 
@@ -28,34 +27,21 @@ class DrinkDTOMockkUnitTest {
 
     var drinkService = mockk<DrinkService>()
 
-    @Test
-    fun searchForCoke_returnsCoke(){
-        givenAFeedOfMockkedDrinkDataAreAvailable()
-        whenSearchForCoke()
-        thenResultContainsCoke()
-        thenVerifiedCokeFunctionsEnvoked()
-    }
-
-    private fun thenVerifiedCokeFunctionsEnvoked() {
-        verify { drinkService.fetchDrinks("coke") }
-        verify(exactly = 0) {drinkService.fetchDrinks("aadskfl") }
-        confirmVerified(drinkService)
-    }
-
-    private fun givenAFeedOfMockkedDrinkDataAreAvailable() {
+    @Before
+    fun setup()
+    {
         mvm = MainViewModel()
         createMockkData()
     }
 
     private fun createMockkData() {
-        var allDrinkLiveData = MutableLiveData<ArrayList<Drink>>()
-        var allDrinks = ArrayList<Drink>()
+        val allDrinkLiveData = MutableLiveData<ArrayList<Drink>>()
+        val allDrinks = ArrayList<Drink>()
 
-        //create mockk drink
-        var coke = Drink("26", "soda", "coca-cola", "coke", "Really good on a warm day!", "4")
+        val coke = Drink("26", "soda", "coca-cola", "coke", "Really good on a warm day!", "4")
         allDrinks.add(coke)
-        var MariageFreres = Drink("61", "Tea", "Marco Polo Blue", "Mariage Freres",  "My Favorite French Tea", "5")
-        allDrinks.add(MariageFreres)
+        val mariageFreres = Drink("61", "Tea", "Marco Polo Blue", "Mariage Freres",  "My Favorite French Tea", "5")
+        allDrinks.add(mariageFreres)
         allDrinkLiveData.postValue(allDrinks)
 
         every {drinkService.fetchDrinks(or("coke", "Mariage Freres"))} returns allDrinkLiveData
@@ -64,15 +50,42 @@ class DrinkDTOMockkUnitTest {
         mvm.drinkService = drinkService
     }
 
+    @Test
+    fun searchForCoke_returnsCoke(){
+        whenSearchForCoke()
+        thenResultContainsCoke()
+        thenVerifiedCokeFunctionsEnvoked()
+    }
+
+    @Test
+    fun searchForMariageFreres_returnsMariageFreres(){
+        whenSearchForMariageFreres()
+        thenResultContainsMariageFreres()
+        thenVerifiedMariageFreresFunctionsEnvoked()
+    }
+
+    @Test
+    fun searchForGarbage_ReturnsNothing(){
+        whenISearchForGarbage()
+        thenIGetZeroResults()
+    }
+
     private fun whenSearchForCoke() {
         mvm.fetchDrinks("coke")
+    }
+
+    private fun whenSearchForMariageFreres() {
+        mvm.fetchDrinks("Mariage Freres")
+    }
+
+    private fun whenISearchForGarbage() {
+        mvm.fetchDrinks("asdflkj")
     }
 
     private fun thenResultContainsCoke() {
         var cokeFound = false
 
         mvm.drinks.observeForever {
-            //observe the drink data
             assertNotNull(it)
             assertTrue(it.size > 0)
             it.forEach {
@@ -84,12 +97,10 @@ class DrinkDTOMockkUnitTest {
         assertTrue(cokeFound)
     }
 
-    @Test
-    fun searchForMariageFreres_returnsMariageFreres(){
-        givenAFeedOfMockkedDrinkDataAreAvailable()
-        whenSearchForMariageFreres()
-        thenResultContainsMariageFreres()
-        thenVerifiedMariageFreresFunctionsEnvoked()
+    private fun thenVerifiedCokeFunctionsEnvoked() {
+        verify { drinkService.fetchDrinks("coke") }
+        verify(exactly = 0) {drinkService.fetchDrinks("aadskfl") }
+        confirmVerified(drinkService)
     }
 
     private fun thenVerifiedMariageFreresFunctionsEnvoked() {
@@ -98,35 +109,19 @@ class DrinkDTOMockkUnitTest {
         confirmVerified(drinkService)
     }
 
-    private fun whenSearchForMariageFreres() {
-        mvm.fetchDrinks("Mariage Freres")
-    }
-
     private fun thenResultContainsMariageFreres() {
-        var MariageFreresFound = false
+        var mariageFreresFound = false
 
         mvm.drinks.observeForever {
-            //observe the drink data
             assertNotNull(it)
             assertTrue(it.size > 0)
             it.forEach {
                 if (it.name.contains("Mariage Freres") && it.brand.contains("Marco Polo Blue") && it.category == "Tea" && it.drinkId == "61" && it.comment.contains("My Favorite French Tea") && it.rating == "5") {
-                    MariageFreresFound = true
+                    mariageFreresFound = true
                 }
             }
         }
-        assertTrue(MariageFreresFound)
-    }
-
-    @Test
-    fun searchForGarbage_ReturnsNothing(){
-        givenAFeedOfMockkedDrinkDataAreAvailable()
-        whenISearchForGarbage()
-        thenIGetZeroResults()
-    }
-
-    private fun whenISearchForGarbage() {
-        mvm.fetchDrinks("asdflkj")
+        assertTrue(mariageFreresFound)
     }
 
     private fun thenIGetZeroResults() {

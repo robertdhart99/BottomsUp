@@ -18,7 +18,7 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentdrink: Drink? = null;
+        var currentdrink: Drink? = null
         var currentPosition: Int = 0
 
         init{
@@ -87,5 +87,5 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         this.drinks = drinks
         drinkListFull = ArrayList(drinks)
     }
-    //
+
 }
