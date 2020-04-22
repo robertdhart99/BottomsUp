@@ -1149,6 +1149,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
 id percent
 id pin
 id progress_circular
@@ -1183,6 +1184,8 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_in_btn
+id sign_up_btn
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1229,6 +1232,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username_sign_up
 id view_offset_helper
 id visible
 id withText
@@ -1309,9 +1313,11 @@ layout row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout sign_up_activity
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+string SignUp
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1362,6 +1368,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string juiceTag
 string mtrl_chip_close_icon_content_description
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -1371,6 +1378,7 @@ string popularProducts
 string searchDrink
 string search_menu_title
 string status_bar_notification_info_overflow
+string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
