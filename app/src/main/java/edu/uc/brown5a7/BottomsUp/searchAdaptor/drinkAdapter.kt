@@ -29,7 +29,7 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         }
 
         fun setData(drink: Drink?, pos: Int) {
-        itemView.drinkName.text = drink!!.name
+            itemView.drinkName.text = drink!!.name
 
             this.currentdrink = drink
             this.currentPosition = pos
@@ -50,42 +50,42 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         holder.setData(drink, position)
     }
 
-    //
-    @get:Override
-    val filter: Filter
-        get() = drinkFilter
-
-    private val drinkFilter: Filter = object : Filter() {
-        @Override
-        protected override fun performFiltering(constraint: CharSequence?): FilterResults {
-            val filteredList: ArrayList<Drink> = ArrayList()
-            if (constraint == null || constraint.isBlank()) {
-                // might need to change isBlank back to .length === 0
-                filteredList.addAll(drinkListFull)
-            } else {
-                val filterPattern: String = constraint.toString().toLowerCase().trim()
-                for (item in drinkListFull) {
-                    if (item!!.name.toLowerCase().contains(filterPattern)) {
-                        filteredList.add(item)
-                    }
-                }
-            }
-            val results = FilterResults()
-            results.values = filteredList
-            return results
-        }
-
-        @Override
-        protected override fun publishResults(constraint: CharSequence?, results: FilterResults) {
-            drinks.clear()
-            drinks.addAll(results.values as ArrayList<Drink>)
-            notifyDataSetChanged()
-        }
-    }
-
-    init {
-        this.drinks = drinks
-        drinkListFull = ArrayList(drinks)
-    }
+//    //
+//    @get:Override
+//    val filter: Filter
+//        get() = drinkFilter
+//
+//    private val drinkFilter: Filter = object : Filter() {
+//        @Override
+//        protected override fun performFiltering(constraint: CharSequence?): FilterResults {
+//            val filteredList: ArrayList<Drink> = ArrayList()
+//            if (constraint == null || constraint.isBlank()) {
+//                // might need to change isBlank back to .length === 0
+//                filteredList.addAll(drinkListFull)
+//            } else {
+//                val filterPattern: String = constraint.toString().toLowerCase().trim()
+//                for (item in drinkListFull) {
+//                    if (item!!.name.toLowerCase().contains(filterPattern)) {
+//                        filteredList.add(item)
+//                    }
+//                }
+//            }
+//            val results = FilterResults()
+//            results.values = filteredList
+//            return results
+//        }
+//
+//        @Override
+//        protected override fun publishResults(constraint: CharSequence?, results: FilterResults) {
+//            drinks.clear()
+//            drinks.addAll(results.values as ArrayList<Drink>)
+//            notifyDataSetChanged()
+//        }
+//    }
+//
+//    init {
+//        this.drinks = drinks
+//        drinkListFull = ArrayList(drinks)
+//    }
 
 }

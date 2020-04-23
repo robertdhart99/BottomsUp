@@ -1038,7 +1038,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id actSearch
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1171,6 +1170,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchView
 id search_badge
 id search_bar
 id search_button
