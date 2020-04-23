@@ -10,6 +10,9 @@ import android.widget.RelativeLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import edu.uc.brown5a7.BottomsUp.R
+import kotlinx.android.synthetic.main.main_fragment.*
+
+
 
 class MainFragment : Fragment() {
 

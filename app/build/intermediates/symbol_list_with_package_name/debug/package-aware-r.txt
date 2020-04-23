@@ -1026,9 +1026,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable password_field
 drawable rounded_corners
+drawable sign_up_btn
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable username_field
 id ALT
 id CTRL
 id FUNCTION
@@ -1186,6 +1189,7 @@ id showHome
 id showTitle
 id sign_in_btn
 id sign_up_btn
+id sing_up_btn
 id smallLabel
 id snackbar_action
 id snackbar_text

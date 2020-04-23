@@ -9,31 +9,34 @@
     android:background="@color/colorPrimary"
     tools:context=".ui.main.MainFragment">
 
+
     <TextView
         android:id="@+id/lblPopular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="38dp"
         android:text="@string/popularProducts"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actSearch" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
-    <AutoCompleteTextView
-        android:id="@+id/actSearch"
-        android:layout_width="349dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
-        android:background="@android:color/background_light"
-        android:elevation="6.5dp"
-        android:hint="@string/searchDrink"
-        android:paddingLeft="40dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorAccent"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="409dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="334dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,20 +49,10 @@
         android:layout_marginBottom="14dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPopular"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="409dp"
-        android:layout_height="42dp"
-        android:layout_gravity="bottom"
-        app:itemIconTint="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.366" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
