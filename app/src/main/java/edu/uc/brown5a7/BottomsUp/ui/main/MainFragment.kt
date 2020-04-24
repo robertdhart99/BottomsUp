@@ -31,7 +31,9 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-
+        viewModel.drinks.observe(this, Observer {
+            drinks -> actDrinkName.setAdapter(ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, drinks))
+        })
     }
 
 }

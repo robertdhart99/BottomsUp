@@ -26,13 +26,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-        mainFragment = MainFragment.newInstance()
-        val viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+
         if(savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, mainFragment)
+                .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
-            activeFragment = mainFragment
         }
 
 //        val layoutManager = LinearLayoutManager(this)

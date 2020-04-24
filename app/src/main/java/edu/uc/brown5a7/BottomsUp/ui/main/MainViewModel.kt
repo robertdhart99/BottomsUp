@@ -7,7 +7,7 @@ import edu.uc.brown5a7.BottomsUp.service.DrinkService
 import edu.uc.brown5a7.BottomsUp.service.DrinkCategoryService
 
 class MainViewModel : ViewModel() {
-    var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
+    var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData<ArrayList<Drink>>()
     var drinkService: DrinkService = DrinkService()
     var categories: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
     var drinkCategoryService : DrinkCategoryService = DrinkCategoryService()
