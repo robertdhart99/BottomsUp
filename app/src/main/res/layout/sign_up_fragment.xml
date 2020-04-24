@@ -34,60 +34,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <AutoCompleteTextView
-        android:id="@+id/username_sign_up"
-        android:layout_width="232dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/username_field"
-        android:elevation="6.5dp"
-        android:hint="@string/username"
-        android:paddingLeft="15dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorAccent"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn" />
-
-    <EditText
-        android:id="@+id/password_input"
-        android:layout_width="232dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/password_field"
-        android:elevation="6.5dp"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorAccent"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_sign_up" />
-
     <Button
         android:id="@+id/sing_up_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="98dp"
         android:background="@drawable/sign_up_btn"
         android:text="Sign Up"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
+        app:layout_constraintVertical_bias="0.009" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
