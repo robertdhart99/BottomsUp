@@ -6,12 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.lifecycle.Observer
 import edu.uc.brown5a7.BottomsUp.R
 import kotlinx.android.synthetic.main.main_fragment.*
-
+import android.widget.ArrayAdapter
+import android.widget.AdapterView
 
 
 class MainFragment : Fragment() {
@@ -32,7 +31,6 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-
 
     }
 

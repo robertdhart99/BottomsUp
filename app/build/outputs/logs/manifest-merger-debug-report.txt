@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b0e390038144269d61d42a0fa394fc47\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\ce4cf89a33ded15216b272ad8910c428\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\5359b91e894a9468bcb8b997f7aedccf\jetified-core-ktx-1.0.2\AndroidManifest.xml:2:1-7:12
@@ -40,29 +40,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Adam Brown\.grad
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b784d122b520ba81304f253e1e005078\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\9a616a8bc5de2472cf64c845aab85cc5\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\93841fff0305e4fa6150464508c770cf\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:3:5-40
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:7:5-21:19
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:7:5-21:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b0e390038144269d61d42a0fa394fc47\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b0e390038144269d61d42a0fa394fc47\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\1410c68dac26c2ae4890a437d49ac910\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -78,35 +78,35 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.2] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b6051f73dfa72a739966d5778dbdeec2\core-1.0.2\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:13:9-40
 activity#edu.uc.brown5a7.BottomsUp.MainActivity
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml:18:27-74
 uses-sdk
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b0e390038144269d61d42a0fa394fc47\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\b0e390038144269d61d42a0fa394fc47\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\ce4cf89a33ded15216b272ad8910c428\appcompat-1.0.2\AndroidManifest.xml:20:5-44
@@ -179,16 +179,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Adam Brown\.gradle\caches\tran
 MERGED from [androidx.print:print:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\9a616a8bc5de2472cf64c845aab85cc5\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\93841fff0305e4fa6150464508c770cf\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\93841fff0305e4fa6150464508c770cf\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Documents\Dev\recycler\BottomsUp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam Brown\Documents\Mobile Dev\new\app\src\main\AndroidManifest.xml
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Adam Brown\.gradle\caches\transforms-2\files-2.1\60ac6ab8c6473aafb978a5fbb6278f0f\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 	android:authorities
