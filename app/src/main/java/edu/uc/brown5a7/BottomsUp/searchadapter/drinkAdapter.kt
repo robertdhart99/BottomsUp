@@ -1,25 +1,23 @@
-package edu.uc.brown5a7.BottomsUp.searchAdaptor
+package edu.uc.brown5a7.BottomsUp.searchadapter
 
 import android.content.Context
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Toast
-import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import edu.uc.brown5a7.BottomsUp.R
 import edu.uc.brown5a7.BottomsUp.dto.Drink
 import kotlinx.android.synthetic.main.row.view.*
 
-class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : RecyclerView.Adapter<drinkAdapter.MyViewHolder>(){
-    private val drinkListFull: ArrayList<Drink> = TODO()
+class DrinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>(){
+    private val drinkListFull : ArrayList<Drink> = TODO()
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentdrink: Drink? = null
-        var currentPosition: Int = 0
+        var currentdrink : Drink? = null;
+        var currentPosition : Int = 0
 
         init{
             itemView.setOnClickListener {
@@ -29,7 +27,7 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         }
 
         fun setData(drink: Drink?, pos: Int) {
-        itemView.drinkName.text = drink!!.name
+            itemView.drinkName.text = drink!!.name
 
             this.currentdrink = drink
             this.currentPosition = pos
@@ -41,11 +39,11 @@ class drinkAdapter(val context: Context, val drinks: ArrayList<Drink>) : Recycle
         return MyViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount() : Int {
         return drinks.size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder : MyViewHolder, position : Int) {
         val drink = drinks[position]
         holder.setData(drink, position)
     }

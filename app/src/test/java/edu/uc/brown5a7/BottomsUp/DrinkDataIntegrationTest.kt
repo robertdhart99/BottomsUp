@@ -1,7 +1,7 @@
 package edu.uc.brown5a7.BottomsUp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import edu.uc.brown5a7.BottomsUp.service.DrinkService
+import edu.uc.brown5a7.BottomsUp.service.DrinkCategoryService
 import edu.uc.brown5a7.BottomsUp.ui.main.MainViewModel
 import io.mockk.mockk
 import org.junit.Assert
@@ -20,7 +20,7 @@ class DrinkDataIntegrationTest {
     var rule: TestRule = InstantTaskExecutorRule()
     lateinit var mvm: MainViewModel
 
-    var drinkService = mockk<DrinkService>()
+    var drinkService = mockk<DrinkCategoryService>()
 
     @Before
     fun setUp()

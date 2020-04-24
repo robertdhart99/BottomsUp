@@ -8,8 +8,6 @@ import retrofit2.http.Query
 interface IDrinkDAO {
 
     @GET("/Drink.json")
-    fun getAllDrinks(): Call<ArrayList<Drink>>
-
+    fun getAllDrinks() : Call<ArrayList<Drink>>
     @GET("/Drink.json")
-    fun getDrinks(@Query("Combined_Name") CountryName:String) : Call<ArrayList<Drink>>
-}
+    fun getDrinks(@Query("Combined_Name") CountryName : String) : Call<ArrayList<Drink>>}

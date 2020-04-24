@@ -3,7 +3,7 @@ package edu.uc.brown5a7.BottomsUp
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import edu.uc.brown5a7.BottomsUp.dto.Drink
-import edu.uc.brown5a7.BottomsUp.service.DrinkService
+import edu.uc.brown5a7.BottomsUp.service.DrinkCategoryService
 import edu.uc.brown5a7.BottomsUp.ui.main.MainViewModel
 import io.mockk.confirmVerified
 import io.mockk.every
@@ -25,7 +25,7 @@ class DrinkDTOMockkUnitTest {
     var rule: TestRule = InstantTaskExecutorRule()
     lateinit var mvm: MainViewModel
 
-    var drinkService = mockk<DrinkService>()
+    var drinkService = mockk<DrinkCategoryService>()
 
     @Before
     fun setup()

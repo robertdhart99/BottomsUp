@@ -2,7 +2,7 @@ package edu.uc.brown5a7.BottomsUp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import edu.uc.brown5a7.BottomsUp.dto.Drink
-import edu.uc.brown5a7.BottomsUp.searchAdaptor.drinkAdapter
+import edu.uc.brown5a7.BottomsUp.searchadapter.drinkAdapter
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Ignore
