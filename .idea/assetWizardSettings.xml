@@ -37,7 +37,7 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="opacityPercent" value="80" />
-                                                <entry key="paddingPercent" value="20" />
+                                                <entry key="paddingPercent" value="10" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -49,10 +49,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/drawable-hdpi/Icon feather-user.png" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/drawable-xxxhdpi/Icon feather-user.png" />
                                       <entry key="outputName" value="ic_action_user" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="c2d4e2" />
+                                      <entry key="themeColor" value="474f66" />
                                     </map>
                                   </option>
                                 </PersistentState>

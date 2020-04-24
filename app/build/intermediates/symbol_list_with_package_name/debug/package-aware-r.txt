@@ -1005,6 +1005,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drink_overview_container
+drawable highlight_path
+drawable ic_action_catalogue
+drawable ic_action_search
+drawable ic_action_user
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1028,6 +1033,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable password_field
 drawable rounded_corners
+drawable search_container
 drawable sign_up_btn
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1038,7 +1044,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id actSearch
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1046,6 +1051,7 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_catalogue
 id action_container
 id action_context_bar
 id action_divider
@@ -1055,7 +1061,9 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_search
 id action_text
+id action_user
 id actions
 id activity_chooser_view_content
 id add
@@ -1152,7 +1160,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id password
+id password_input
 id percent
 id pin
 id progress_circular
@@ -1171,6 +1179,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchView
 id search_badge
 id search_bar
 id search_button
@@ -1317,8 +1326,9 @@ layout row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
-layout sign_up_activity
+layout sign_up_fragment
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string SignUp
@@ -1364,6 +1374,7 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string catalogueIcon
 string character_counter_content_description
 string character_counter_pattern
 string drinkName
@@ -1382,6 +1393,7 @@ string popularProducts
 string searchDrink
 string search_menu_title
 string status_bar_notification_info_overflow
+string user
 string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
