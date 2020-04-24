@@ -1,8 +1,8 @@
 package edu.uc.brown5a7.BottomsUp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
+    private lateinit var drinkAdapter: DrinkAdapter
+    private var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
 
     lateinit var toolbar: ActionBar
 
@@ -40,23 +42,25 @@ class MainActivity : AppCompatActivity() {
         false
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-        val layoutManager = LinearLayoutManager(this)
-        layoutManager.orientation = LinearLayoutManager.VERTICAL
-        recyclerView.layoutManager = layoutManager
 
-        var drinks : MutableLiveData<ArrayList<Drink>> = MutableLiveData()
-        var drinkService : DrinkService = DrinkService()
-        drinks = drinkService.fetchDrinks("blank")
-        val drinksFullList : ArrayList<Drink> = drinks as ArrayList<Drink>
-        val adapter = DrinkAdapter(this, drinksFullList)
-        recyclerView.adapter = adapter
+        initRecyclerView()
+        val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink>
+        drinkAdapter = DrinkAdapter(this, drinksFullList)
+        recyclerView.adapter = drinkAdapter
 
         toolbar = supportActionBar!!
         val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+    }
+
+    private fun initRecyclerView() {
+        val drinkService = DrinkService()
+        drinks = drinkService.fetchDrinks("blank")
+        recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
     }
 
     private fun openFragment(fragment: Fragment) {
@@ -65,6 +69,5 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
     }
-
 
 }

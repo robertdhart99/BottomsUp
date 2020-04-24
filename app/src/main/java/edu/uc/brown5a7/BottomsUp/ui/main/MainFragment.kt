@@ -1,5 +1,6 @@
 package edu.uc.brown5a7.BottomsUp.ui.main
 
+import MainViewModel
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment

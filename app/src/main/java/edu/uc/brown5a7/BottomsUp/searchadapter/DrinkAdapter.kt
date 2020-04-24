@@ -10,14 +10,16 @@ import androidx.recyclerview.widget.RecyclerView
 import edu.uc.brown5a7.BottomsUp.R
 import edu.uc.brown5a7.BottomsUp.dto.Drink
 import kotlinx.android.synthetic.main.row.view.*
+import kotlin.collections.ArrayList
 
-class DrinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>(){
-    private val drinkListFull : ArrayList<Drink> = TODO()
+class DrinkAdapter(val context: Context, var drinks: ArrayList<Drink>) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>(){
+    private var drinkListFull: ArrayList<Drink> = ArrayList(drinks)
 
-    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class MyViewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         var currentdrink : Drink? = null;
         var currentPosition : Int = 0
+        private lateinit var currentDrink: Drink
 
         init{
             itemView.setOnClickListener {
@@ -39,12 +41,12 @@ class DrinkAdapter(val context : Context, val drinks : ArrayList<Drink>) : Recyc
         return MyViewHolder(view)
     }
 
-    override fun getItemCount() : Int {
-        return drinks.size
+    override fun getItemCount(): Int {
+        return drinkListFull.size
     }
 
-    override fun onBindViewHolder(holder : MyViewHolder, position : Int) {
-        val drink = drinks[position]
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        val drink = drinkListFull[position]
         holder.setData(drink, position)
     }
 
