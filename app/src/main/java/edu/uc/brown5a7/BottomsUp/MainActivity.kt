@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
     private lateinit var drinkAdapter: DrinkAdapter
-    private var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
+//    private var drinks: MutableLiveData<ArrayList<Drink>> = MutableLiveData()
 
     lateinit var toolbar: ActionBar
 
@@ -47,21 +47,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-        initRecyclerView()
-        val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink>
-        drinkAdapter = DrinkAdapter(this, drinksFullList)
-        recyclerView.adapter = drinkAdapter
+//        initRecyclerView()
+//        val drinksFullList: ArrayList<Drink> = drinks as ArrayList<Drink>
+//        drinkAdapter = DrinkAdapter(this, drinksFullList)
+//        recyclerView.adapter = drinkAdapter
 
         toolbar = supportActionBar!!
         val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
-
-    private fun initRecyclerView() {
-        val drinkService = DrinkService()
-        drinks = drinkService.fetchDrinks("blank")
-        recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
-    }
+//
+//    private fun initRecyclerView() {
+//        val drinkService = DrinkService()
+//        drinks = drinkService.fetchDrinks("blank")
+//        recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
+//    }
 
     private fun openFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()

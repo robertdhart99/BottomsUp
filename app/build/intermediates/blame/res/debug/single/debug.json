@@ -104,12 +104,12 @@
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/menu/drawable-mdpi/ic_action_catalogue.png"
     },
     {
-        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable_juice_tag.xml.flat",
-        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/juice_tag.xml"
-    },
-    {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable_search_container.png.flat",
         "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/search_container.png"
+    },
+    {
+        "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable_juice_tag.xml.flat",
+        "source": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/src/main/res/drawable/juice_tag.xml"
     },
     {
         "merged": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_user.png.flat",

@@ -8,55 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:986846279056:android:87381875fbe5c8309eef15",
-        "android_client_info": {
-          "package_name": "com.BottomsUp.firebase"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "986846279056-r53hqq1jfvjph51kvtmvhej2gcvffcp3.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.BottomsUp.firebase",
-            "certificate_hash": "610f5bee466c31d5072ba38d6fcf6523d100f934"
-          }
-        },
-        {
-          "client_id": "986846279056-anu5e9m32ndrimis9q9jn7214ot25srq.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCexCzgU_nJvlfMlR8gn-eXlFm4ML4UEF4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "986846279056-anu5e9m32ndrimis9q9jn7214ot25srq.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:986846279056:android:ef50de7c899646099eef15",
+        "mobilesdk_app_id": "1:986846279056:android:25cae0e17f8223079eef15",
         "android_client_info": {
           "package_name": "edu.uc.brown5a7.BottomsUp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "986846279056-vemn0go27u77d5oa3demafstgqsbomva.apps.googleusercontent.com",
+          "client_id": "986846279056-48p66pqlsivgjbhd3shckkfvetv1qsh6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "edu.uc.brown5a7.BottomsUp",
-            "certificate_hash": "641ebc54b9bf2df66f5e180b557768d7a1ec4c3b"
+            "certificate_hash": "d4ea780b49cd60e63127736237c05ae57483ea27"
           }
         },
         {

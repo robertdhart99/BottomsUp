@@ -4,7 +4,7 @@
             "outputFile": "/Users/mashaneshenko/Documents/Git/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/mashaneshenko/.gradle/caches/transforms-2/files-2.1/ce4cf89a33ded15216b272ad8910c428/appcompat-1.0.2/res/values-v25/values-v25.xml",
+                    "source": "/Users/mashaneshenko/.gradle/caches/transforms-2/files-2.1/9da2134b3177269a6c06af9ad6f10422/appcompat-1.0.2/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",
