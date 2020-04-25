@@ -24,11 +24,11 @@ class MainViewModel : ViewModel() {
         categories = drinkCategoryService.fetchCategory(category)
     }
 
-    init {
-        firestore = FirebaseFirestore.getInstance()
-        firestore.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
-        listenToDrinks()
-    }
+//    init {
+//        firestore = FirebaseFirestore.getInstance()
+//        firestore.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
+//        listenToDrinks()
+//    }
 
     private fun listenToDrinks() {
         firestore.collection("Drinks").addSnapshotListener {

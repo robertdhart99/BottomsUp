@@ -1,8 +1,8 @@
 package edu.uc.brown5a7.BottomsUp
 
+import MainViewModel
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import edu.uc.brown5a7.BottomsUp.service.DrinkCategoryService
-import edu.uc.brown5a7.BottomsUp.ui.main.MainViewModel
 import io.mockk.mockk
 import org.junit.Assert
 import org.junit.Before

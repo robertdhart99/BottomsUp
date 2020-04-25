@@ -2,7 +2,7 @@ package edu.uc.brown5a7.BottomsUp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import edu.uc.brown5a7.BottomsUp.dto.Drink
-import edu.uc.brown5a7.BottomsUp.searchadapter.drinkAdapter
+import edu.uc.brown5a7.BottomsUp.searchadapter.DrinkAdapter
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Ignore
@@ -18,7 +18,7 @@ class DrinkAdapterIntegrationTest {
 
     @get:Rule
     var rule: TestRule = InstantTaskExecutorRule()
-    lateinit var drinkAdapter: drinkAdapter
+    lateinit var drinkAdapter: DrinkAdapter
     lateinit var mainActivity: MainActivity
     var drinkCount = 0
 
@@ -28,7 +28,6 @@ class DrinkAdapterIntegrationTest {
         mainActivity = MainActivity()
     }
 
-    @Ignore
     @Test
     fun testConstructorStoresValuesCorrectly()
     {
@@ -43,7 +42,7 @@ class DrinkAdapterIntegrationTest {
         val drink1 = Drink("1", "Soda", "Pepsi", "Pepsi", "Bepis", "4")
         drinks.add(drink0)
         drinks.add(drink1)
-        drinkAdapter = drinkAdapter(mainActivity, drinks)
+        drinkAdapter = DrinkAdapter(mainActivity, drinks)
     }
 
     private fun whenGetItemCountIsCalled() {
