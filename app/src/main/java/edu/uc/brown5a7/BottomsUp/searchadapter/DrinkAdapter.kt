@@ -12,6 +12,10 @@ import edu.uc.brown5a7.BottomsUp.dto.Drink
 import kotlinx.android.synthetic.main.row.view.*
 import kotlin.collections.ArrayList
 
+
+
+
+
 class DrinkAdapter(val context: Context, var drinks: ArrayList<Drink>) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>(){
     private var drinkListFull: ArrayList<Drink> = ArrayList(drinks)
 
